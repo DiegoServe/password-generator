@@ -56,6 +56,7 @@ header {
 
 .card-footer {
   text-align: center;
+
 }
 
 .card-footer::before {
@@ -70,6 +71,15 @@ header {
   content: " ";
   display: block;
   clear: both;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {

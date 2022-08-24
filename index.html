@@ -26,23 +26,24 @@
         </div>
         <div class="card-footer">
           <h3>Password Options</h3>
-          <form>
-            <label for="length">Password Length (Between 8-128 Characters)</label>
-            <div>
-              <input type="range" min="8" max="128" value="8" id="valRange">
-              <input type="number" min="8" max="128" value="8" id="valNumber">
-            </div>
+          
+        <form class="form">
+          <label for="length">Password Length (Between 8-128 Characters)</label>
+          <div>
+          <input type="range" min="8" max="128" value="8" id="valRange">
+          <input type="number" min="8" max="128" value="8" id="valNumber">
+          </div>
 
-            <label for="includeNumbers">Include Numbers</label>
-            <input type="checkbox" id="includeNumbers">
+          <label for="includeNumbers">Include Numbers</label>
+          <input type="checkbox" id="includeNumbers">
 
-            <label for="includeUppercase">Include Uppercase</label>
-            <input type="checkbox" id="includeUppercase">
+          <label for="includeUppercase">Include Uppercase</label>
+          <input type="checkbox" id="includeUppercase">
 
-            <label for="includeSymbols">Include Symbols</label>
-            <input type="checkbox" id="includeSymbols">
+          <label for="includeSymbols">Include Symbols</label>
+          <input type="checkbox" id="includeSymbols">
+        </form>
 
-          </form>
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
