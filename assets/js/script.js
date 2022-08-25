@@ -20,7 +20,6 @@ const SYMBOLS_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
 // Add event listener to generate button
 generateEl.addEventListener("click", e => {
   e.preventDefault()
-  console.log(generatePassword)
   const length = parseInt(lengthEl.value);
   const hasUpper = upperCaseEl.checked;
   const hasLower = lowerCaseEl.checked;
@@ -31,12 +30,10 @@ generateEl.addEventListener("click", e => {
   });
 
 
-
 // Generate Password Function
-function generatePassword(length, upper, lower, number, symbol) {
+function generatePassword(length, lowerCaseEl, upperCaseEl, numbersEl, symbolsEl) {
     let charCodes = LOWERCASE_CHAR_CODES
-    if (upperCaseEl) charCodes.concat
-    (UPPERCASE_CHAR_CODES)
+    if (upperCaseEl) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
     if (symbolsEl) charCodes = charCodes.concat(SYMBOLS_CHAR_CODES)
     if (numbersEl) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
     
